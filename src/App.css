@@ -1,11 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,19 +6,68 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  padding: 1rem 3rem;
+  background: var(--black);
+  z-index: 99;
+  backdrop-filter: blur(50px);
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  color: var(--primary);
+  text-transform: capitalize;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header a {
+  color: var(--white);
+}
+
+header a:hover {
+  color: var(--primary);
+}
+
+header .loginBtn {
+  background: var(--primary);
+  color: var(--white);
+  padding: .5rem 1rem;
+}
+
+.Btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: .5rem 1rem;
+}
+
+.Btn:hover {
+  background: var(--white);
+  color: var(--primary);
+  transition: var(--transition-low);
+}
+
+.BtnOne {
+  background: transparent;
+  border: .1rem solid var(--primary);
+  color: var(--primary);
+  padding: .5rem 1rem;
+}
+
+.BtnOne:hover {
+  background: var(--primary);
+  color: var(--white);
+  border: .1rem solid transparent;
+  transition: var(--transition-low);
+}
+
+header .loginBtn:hover {
+  background: var(--white);
+  color: var(--primary);
+  transition: var(--transition-low);
 }
 
 @keyframes App-logo-spin {
