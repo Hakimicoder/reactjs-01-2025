@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +20,7 @@ html {
   --dark:#282c34;
   --black: #000;
   --white: #fff;
-  --primary: #f03684;
+  --primary: #ef4444;
 
   --transition-low: all .3s ease-out;
 }

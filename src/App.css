@@ -6,6 +6,10 @@
   }
 }
 
+section {
+  padding: 1rem 3rem;
+}
+
 header {
   padding: 1rem 3rem;
   background: var(--black);
@@ -70,6 +74,30 @@ header .loginBtn:hover {
   transition: var(--transition-low);
 }
 
+
+.btnCl {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btnCl button {
+  padding: .5rem 3rem;
+}
+
+.btnCl :nth-last-of-type(2) {
+  display: inline-block;
+  background: var(--primary);
+}
+.btnCl :nth-last-of-type(1) {
+  display: inline-block;
+  background: #3b82f6;
+}
+
+.home-page {
+  padding: 32rem 3rem;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -77,4 +105,4 @@ header .loginBtn:hover {
   to {
     transform: rotate(360deg);
   }
-}
+} 
