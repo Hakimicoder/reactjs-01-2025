@@ -2,52 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  outline: none;
-  box-sizing: border-box;
-}
+@layer base {
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+  /* Start Custom styles for the modal scrollbar */
 
-:root {
-  --dark:#282c34;
-  --black: #000;
-  --white: #fff;
-  --primary: #ef4444;
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
 
-  --transition-low: all .3s ease-out;
-}
+  :root {
+    --dark: #282c34;
+    --black: #000;
+    --white: #fff;
+    --primary: #3b82f6;
+    --primary-red: #ef4444;
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    --transition-low: all .3s ease-out;
+  }
 
-.title-big {
-  font-size: 3rem;
-}
+  .dark {
+    background: var(--dark);
+  }
 
-.title-sm {
-  font-size: 2.4rem;
-}
+  .text-dark {
+    color: var(--dark);
+    /* color: var(--primary-red); */
+  }
 
-.p-big, .btn-big {
-  font-size: 1.5rem;
-}
+  .active {
+    border-left: .4rem solid var(--primary);
+  }
 
-.p-sm, .btn-sm {
-  font-size: 1.2rem;
-}
+  .white {
+    color: var(--white);
+  }
 
-button {
-  all: unset;
-  cursor: pointer;
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .primary-red {
+    background: var(--primary-red);
+  }
+
+  .primary-blue {
+    background: var(--primary);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark);
+    padding: 1rem 3rem;
+  }
+
+  .banner {
+    padding: 5rem 3rem;
+  }
+
+  .sidebar-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  input {
+    border: .1rem solid transparent;
+    outline: none;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+  }
+
+  input:focus {
+    border: .1rem solid var(--primary);
+  }
+  .title-big {
+    font-size: 3rem;
+  }
+
+  .title-sm {
+    font-size: 2.4rem;
+  }
+
+  .p-big,
+  .btn-big {
+    font-size: 1.5rem;
+  }
+
+  .p-sm,
+  .btn-sm {
+    font-size: 1.2rem;
+  }
 }

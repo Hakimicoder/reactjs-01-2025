@@ -10,7 +10,12 @@ import Register from "./pages/register";
 import Todolist from "./pages/todolist/index";
 import NotFound from "./pages/error/NotFound";
 import Button from "./pages/bouton/button";
+import UserInfo from "./pages/user/info/";
+import UserDashboard from "./pages/user/dashboard";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
+import AdminDashboard from './pages/admin/dashboard';
+import AdminInterface from './pages/admin/dashboard';
+import Card from './cards';
 
 
 const App = () => {
@@ -26,8 +31,13 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Todolist" element={<Todolist />} />
+          <Route path="/Userinfo" element={<UserInfo />} />
+          <Route path="/Userdashboard" element={<UserDashboard />} />
+          <Route path="/AdminDashboard" element={<AdminDashboard />} />
+          <Route path="/AdminInterface" element={<AdminInterface />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* <Card /> */}
       </BrowserRouter>
     </>
   )
