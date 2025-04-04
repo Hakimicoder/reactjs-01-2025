@@ -5,8 +5,8 @@ import Home from "./pages/index";
 import About from "./pages/about";
 import Service from "./pages/service";
 import Contact from "./pages/contact";
-import Login from "./pages/login";
-import Register from "./pages/register";
+import Login from "./pages/auth/login";
+import Register from "./pages/auth/register";
 import Todolist from "./pages/todolist/index";
 import NotFound from "./pages/error/NotFound";
 import Button from "./pages/bouton/button";
@@ -28,16 +28,15 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
+          <Route path="/auth/login" element={<Login />} />
           <Route path="/Todolist" element={<Todolist />} />
-          <Route path="/Userinfo" element={<UserInfo />} />
-          <Route path="/Userdashboard" element={<UserDashboard />} />
-          <Route path="/AdminDashboard" element={<AdminDashboard />} />
-          <Route path="/AdminInterface" element={<AdminInterface />} />
+          
+          <Route path="/auth/Register" element={<Register />} />
+          <Route path="/user/info" element={<UserInfo />} />
+          <Route path="/user/dashboard" element={<UserDashboard />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {/* <Card /> */}
       </BrowserRouter>
     </>
   )

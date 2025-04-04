@@ -3,7 +3,9 @@ import AdminInterface from '../sidebar';
 import AdminContent from '../content';
 
 let logo = "School";
-let name = "Kamga";
+let name = "Jumael Kamga";
+let email = "jumaelkamga1@gmail.com";
+let logout = "Déconnexion";
 
 const AdminDashboard  = () => {
   return (

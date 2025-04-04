@@ -1,14 +1,15 @@
 import React from 'react'
 
 
- const Username = "Jumy";
+ const Username = "User";
 
 export default function UserInfo() {
   return (
     <>
-      <div className="banner">
+      <div className="">
         <div>
-          <aside />
+          {/* <aside /> */}
+          <h1 className="font-black text-4xl text-red-500">Hello <span className="text-black">{Username}</span></h1>
         </div>
       </div>
     </>

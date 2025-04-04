@@ -13,6 +13,7 @@
 
   :root {
     --dark: #282c34;
+    --dark-low: #282c34e2;
     --black: #000;
     --white: #fff;
     --primary: #3b82f6;
@@ -21,8 +22,18 @@
     --transition-low: all .3s ease-out;
   }
 
+  .transition-low {
+    transition: var(--transition-low);
+  }
+
   .dark {
     background: var(--dark);
+    color: var(--white);
+  }
+
+  .card-dark:hover {
+    background: var(--dark-low);
+    transition: var(--transition-low);
   }
 
   .text-dark {
@@ -44,10 +55,12 @@
 
   .primary-red {
     background: var(--primary-red);
+    color: var(--white);
   }
 
   .primary-blue {
     background: var(--primary);
+    color: var(--white);
   }
 
   .header {
@@ -62,7 +75,7 @@
     padding: 5rem 3rem;
   }
 
-  .sidebar-scrollbar::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
 

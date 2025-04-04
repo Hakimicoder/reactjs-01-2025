@@ -13,10 +13,10 @@ const Notfound = () => {
                     mais pas grave profite-en pour compter ou <Link to="/Home" className="text-blue-600">retourner a l'cceuil</Link></h4>
                 <p className="mb-6 text-3xl text-blue-600">Compte : <span className="text-blue-500 font-bold">{compte}</span></p>
 
-                <div className="mt-4 flex-1 gap-4 items-center">
-                    <button onClick={() => setCompte(compte + 1)} className="rounded-md border-none bg-blue-500 hover:bg-blue-600 duration-150 ease-in-out text-white text-center text-3xl">+</button>
-                    <button onClick={() => setCompte(compte - 1)} className="rounded-md border-none duration-150 ease-in-out text-white text-center text-3xl">-</button>
-                    <button onClick={() => setCompte(compte - compte)} className="rounded-md border-none hover:bg-blue-600 duration-150 ease-in-out text-white text-center text-3xl">0</button>
+                <div className="mt-4 flex gap-4 items-center">
+                    <button onClick={() => setCompte(compte + 1)} className="bg-blue-500 hover:bg-blue-600 text-white text-center p-big px-8 py-2">+</button>
+                    <button onClick={() => setCompte(compte - 1)} className="bg-red-500 hover:bg-red-600 text-white  text-center p-big px-8 py-2">-</button>
+                    <button onClick={() => setCompte(compte - compte)} className="bg-blue-500 hover:bg-blue-600 text-white text-center p-big px-8 py-2">0</button>
                 </div>
             </div>
         </div>
